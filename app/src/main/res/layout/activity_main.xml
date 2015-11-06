@@ -11,36 +11,68 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="insert"
-        android:id="@+id/insert"
-
-        android:layout_above="@+id/viewlist"
-        android:layout_centerHorizontal="true" />
-    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:src="@android:drawable/ic_dialog_email"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View"
-        android:id="@+id/viewlist"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
-        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay"
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="336dp"
+        android:background="#04988a"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Team Fishy"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="What&apos;s the Catch"
+            android:id="@+id/textView3"
+            android:layout_marginTop="54dp"
+            android:textSize="16pt"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="509dp"
+        android:layout_below="@+id/view"
+        android:background="#06998b"
+        android:contextClickable="false"
+        android:focusableInTouchMode="false"
+        android:transitionGroup="false"
+        android:onClick="loginPressed"
+        android:nestedScrollingEnabled="false"
+        android:id="@+id/loginFrame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Log In"
+            android:id="@+id/textView5"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="12pt" />
+    </FrameLayout>
 
 
 </RelativeLayout>

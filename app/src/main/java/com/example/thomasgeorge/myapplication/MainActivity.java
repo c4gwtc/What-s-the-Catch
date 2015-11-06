@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -25,20 +26,18 @@ public class MainActivity extends AppCompatActivity {
     SQLiteDatabase db;
     EditText name,mouth,dorsalfin,tail;
     Button insert,viewlist;
+    FrameLayout fl_loginButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
         name=(EditText) findViewById(R.id.fishname);
         mouth=(EditText) findViewById(R.id.fishmouth);
         dorsalfin=(EditText) findViewById(R.id.fishdorsalfin);
         tail=(EditText) findViewById(R.id.fishtail);
-        insert=(Button) findViewById(R.id.insert);
-        viewlist=(Button) findViewById(R.id.viewlist);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-
+        fl_loginButton = (FrameLayout)findViewById(R.id.loginFrame);
 
         FishDbConn myDbHelper = new FishDbConn(this);
         myDbHelper = new FishDbConn(this);
@@ -60,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             Log.e("DATABASE OPERATION", "database opened");
 
 
-        }catch(SQLException sqle){
+        }catch(SQLException sqle) {
 
             try {
                 throw sqle;
@@ -69,28 +68,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        insert.setOnClickListener(new View.OnClickListener() {
-            @Override
+        fl_loginButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DbInsert.class));
-            }
-        });
-
-        viewlist.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DataListActivity.class));
+                startActivity(new Intent(MainActivity.this, FishMapActivity.class));
             }
         });
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
