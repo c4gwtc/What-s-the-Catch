@@ -18,6 +18,7 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textAppearance="?android:attr/textAppearanceLarge"
+<<<<<<< HEAD
     android:text="fish min len"
     android:id="@+id/fishminlen"
     android:layout_below="@+id/textView2"
@@ -37,11 +38,45 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:layout_alignRight="@+id/button"
     android:layout_alignEnd="@+id/button"
     android:layout_below="@+id/fishminlen" />
+=======
+    android:text="Fish name"
+    android:id="@+id/fishname"
+    android:layout_below="@+id/textView2"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
 
 <EditText
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Fish dorsal fin"
+    android:id="@+id/fishdorsalfin"
+    android:layout_below="@+id/fishname"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignRight="@+id/fishname"
+    android:layout_alignEnd="@+id/fishname" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Fish Mouth"
+    android:id="@+id/fishmouth"
+    android:layout_below="@+id/fishdorsalfin"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+>>>>>>> c1c371f67b41a97d439e24884522706c660cf6ba
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+<<<<<<< HEAD
     android:text="Fish color"
     android:id="@+id/fishcolor"
     android:layout_below="@+id/fishmaxwt"
@@ -49,13 +84,28 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:layout_alignParentStart="true"
     android:layout_alignRight="@+id/fishmaxwt"
     android:layout_alignEnd="@+id/fishmaxwt" />
+=======
+    android:text="Fish tail"
+    android:id="@+id/fishtail"
+    android:layout_below="@+id/fishmouth"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignRight="@+id/fishmouth"
+    android:layout_alignEnd="@+id/fishmouth" />
+>>>>>>> c1c371f67b41a97d439e24884522706c660cf6ba
 
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+<<<<<<< HEAD
     android:text="Find Fish"
     android:id="@+id/button"
     android:layout_below="@+id/fishcolor"
+=======
+    android:text="Insert"
+    android:id="@+id/button"
+    android:layout_below="@+id/fishtail"
+>>>>>>> c1c371f67b41a97d439e24884522706c660cf6ba
     android:layout_toRightOf="@+id/textView2"
     android:layout_toEndOf="@+id/textView2"
     android:layout_marginTop="54dp"
@@ -71,6 +121,7 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_marginTop="35dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+<<<<<<< HEAD
 
     <EditText
         android:layout_width="wrap_content"
@@ -83,4 +134,6 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/button"
         android:layout_alignEnd="@+id/button" />
+=======
+>>>>>>> c1c371f67b41a97d439e24884522706c660cf6ba
 </RelativeLayout>

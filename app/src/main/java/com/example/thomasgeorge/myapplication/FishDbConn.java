@@ -215,7 +215,11 @@ private static String DB_PATH = "/data/data/com.example.thomasgeorge.myapplicati
 
     public Cursor getinfo(SQLiteDatabase db){
         Cursor cursor;
+<<<<<<< HEAD
         String[] projections = {FishDb.fishdb1.FISH_NAME,FishDb.fishdb1.FISH_SCNAME,FishDb.fishdb1.FISH_MINLEN,FishDb.fishdb1.FISH_MAXLEN,FishDb.fishdb1.FISH_MAXWT,FishDb.fishdb1.FISH_COLOR,FishDb.fishdb1.FISH_FIN};
+=======
+        String[] projections = {FishDb.fishdb1.FISH_NAME,FishDb.fishdb1.FISH_MOUTH,FishDb.fishdb1.FISH_DORSALFIN,FishDb.fishdb1.FISH_TAIL};
+>>>>>>> c1c371f67b41a97d439e24884522706c660cf6ba
         cursor=db.query(FishDb.fishdb1.TABLE_NAME,projections,null,null,null,null,null);
         return cursor;
     }

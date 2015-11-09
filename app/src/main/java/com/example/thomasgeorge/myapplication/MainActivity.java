@@ -23,7 +23,11 @@ public class MainActivity extends AppCompatActivity {
    Context context;
     FishDbConn fishdbconn;
     SQLiteDatabase db;
+<<<<<<< HEAD
     EditText minlen,maxlen,maxwt,fishcolor,fishfin;
+=======
+    EditText name,mouth,dorsalfin,tail;
+>>>>>>> c1c371f67b41a97d439e24884522706c660cf6ba
     Button insert,viewlist;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +35,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+<<<<<<< HEAD
         minlen=(EditText) findViewById(R.id.fishminlen);
         //maxlen=(EditText) findViewById(R.id.fishmaxlen);
         maxwt=(EditText) findViewById(R.id.fishmaxwt);
         fishcolor=(EditText) findViewById(R.id.fishcolor);
         fishfin=(EditText) findViewById(R.id.fishfin);
+=======
+        name=(EditText) findViewById(R.id.fishname);
+        mouth=(EditText) findViewById(R.id.fishmouth);
+        dorsalfin=(EditText) findViewById(R.id.fishdorsalfin);
+        tail=(EditText) findViewById(R.id.fishtail);
+>>>>>>> c1c371f67b41a97d439e24884522706c660cf6ba
         insert=(Button) findViewById(R.id.insert);
         viewlist=(Button) findViewById(R.id.viewlist);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
